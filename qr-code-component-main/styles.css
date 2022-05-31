@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --white: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--LightGray);
+}
+
+.cards-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-container {
+    background-color: var(--white);
+    width: 310px;
+    height: 500px;
+    margin: 60px auto;
+    border-radius: 16px;
+    padding: 16px;
+    transition: 250ms;
+}
+.main-container:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px;
+    transition: 250ms;
+    margin-top: 50px;
+}
+.img-container {
+    background-image: url(./images/image-qr-code.png);
+    background-size: cover;
+    width: 100%;
+    height: 310px;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    animation: UpCenter 500ms none;
+}
+
+h1 {
+    color: var(--DarkBlue);
+    font-size: 23px;
+    text-align: center;
+    margin: 0px 18px;
+    margin-bottom: 24px;
+    animation: LeftCenter 500ms none;
+}
+p {
+    font-size: 16px;
+    color: var(--GrayishBlue);
+    margin: 0 28px;
+    text-align: center;
+    animation: RightCenter 500ms none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@keyframes UpCenter {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes LeftCenter {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes RightCenter {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
