@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--PaleBlue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    overflow: hidden;
+    width: 328px;
+    height: 570px;
+    margin: 70px auto;
+    border-radius: 20px;
+    background-color: white;
+}
+.image {
+    background-image: url(./images/illustration-hero.svg);
+    height: 162px;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 29px 0 20px;
+    color: var(--DarkBlue);
+}
+
+.main-paragraph {
+    text-align: center;
+    color: var(--DesaturatedBlue);
+    margin-bottom: 32px;
+    padding: 0 30px;
+}
+.plan-container {
+    width: 280px;
+    height: 82px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 32px;
+    border-radius: 8px;
+    background-color: var(--VeryPaleBlue);
+}
+.icon-container {
+    background-image: url(./images/icon-music.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.payment p:nth-child(1) {
+    color: var(--DarkBlue);
+    font-weight: 900;
+    font-size: 0.9em;
+}
+.payment p:nth-child(2) {
+    color: var(--DesaturatedBlue);
+}
+.change {
+    color: var(--BrightBlue);
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.change:hover {
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+}
+
+button {
+    background-color: var(--BrightBlue);
+    border: none;
+    width: 280px;
+    height: 53px;
+    color: var(--VeryPaleBlue);
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 0.9em;
+    margin-bottom: 18px;
+    box-shadow: 1px 10px 8px 3px var(--PaleBlue);
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--DesaturatedBlue);
+}
+.cancel-container {
+    text-align: center;
+}
+.cancel {
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    font-size: 0.9em;
+    font-weight: 900;
+}
+.cancel:hover {
+    color: var(--DarkBlue);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:944px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
+    .main-container {
+        width: 408px;
+        height: 632px;
+        margin-bottom: 50px;
+    }
+    h1 {
+        margin: 39px 0px 23px;
+    }
+    .main-paragraph {
+        margin-bottom: 20px;
+    }
+    .plan-container {
+        width: 316px;
+        height: 91px;
+        padding: 0 10px;
+        margin-bottom: 28px;
+    }
+    .image {
+        height: 200px;
+    }
+    .change {
+        margin-left: 60px;
+    }
+    button {
+        width: 316px;
+        margin-bottom: 32px;
+    }
+}
