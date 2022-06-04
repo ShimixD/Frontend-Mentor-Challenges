@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGray: hsl(0, 0%, 95%);
+}
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--VeryLightGray);
+}
+
+.main-container {
+    width: 325px;
+    margin: 87px auto 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+article {
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+}
+
+#sedans {
+    background-color: var(--BrightOrange);
+}
+#suvs {
+    background-color: var(--DarkCyan);
+}
+#luxury {
+    background-color: var(--VeryDarkCyan);
+}
+
+img {
+    margin-bottom: 36px;
+}
+h2 {
+    color: var(--VeryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+p {
+    color: var(--TransparentWhite);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+button {
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--VeryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+#sedans-btn {
+    color: var(--BrightOrange);
+}
+#suvs-btn {
+    color: var(--DarkCyan);
+}
+#luxury-btn {
+    color: var(--VeryDarkCyan);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--VeryLightGray);
+}
+
+#sedans-btn:hover {
+    background-color: var(--BrightOrange);
+    color: var(--VeryLightGray);
+}
+#suvs-btn:hover {
+    background-color: var(--DarkCyan);
+    color: var(--VeryLightGray);
+}
+#luxury-btn:hover {
+    background-color: var(--VeryDarkCyan);
+    color: var(--VeryLightGray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:944px) {
+    .main-container {
+        width: 924px;
+        display: flex;
+        margin-top: 170px;
+    }
+
+    article {
+        height: 500px;
+    }
+    p {
+        margin-bottom: 80px;
+    }
+}
