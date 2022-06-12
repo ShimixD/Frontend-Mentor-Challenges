@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--VeryDarkBlue);
+}
+
+.main-container {
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .card {
+    background-color: var(--DarkBlue);
+    width: 88%;
+    max-width: 41rem;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+.main-container .card .star {
+    background-color: rgba(124, 135, 152, 0.2);
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .card .star img {
+    width: 1.4rem;
+}
+.main-container .card .title {
+    font-size: 2.4rem;
+    color: var(--White);
+    margin-top: 1.9rem;
+}
+.main-container .card .text {
+    color: var(--LightGrey);
+    font-size: 1.415rem;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+}
+.main-container .card .rating-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-container .card .rating-wrapper .rating-btn {
+    color: #959eac;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: rgba(124, 135, 152, 0.2);
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.6rem;
+}
+.main-container .card .rating-wrapper .rating-btn div {
+    transform: translateY(12%);
+}
+.main-container .card .rating-wrapper .rating-btn:hover {
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+.main-container .card .rating-wrapper .rating-btn:hover div {
+    color: white;
+}
+.main-container .card .rating-wrapper .active {
+    background-color: var(--LightGrey);
+}
+.main-container .card .rating-wrapper .active div {
+    color: white;
+}
+.main-container .card .submit-btn {
+    background-color: var(--Orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding: 1.3rem;
+    border-radius: 4rem;
+}
+.main-container .card .submit-btn div {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.main-container .card .submit-btn:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.main-container .card .submit-btn:hover div {
+    color: var(--Orange);
+    font-weight: 700;
+}
+.main-container .card .card-content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container .card .card-content-2 img {
+    width: 14.5rem;
+    margin-top: 1rem;
+}
+.main-container .card .card-content-2 .text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.main-container .card .card-content-2 .result {
+    background-color: rgba(124, 135, 152, 0.2);
+    padding: 0.8rem 1.4rem;
+    border-radius: 2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+.main-container .card .card-content-2 .result div {
+    color: var(--Orange);
+    font-size: 1.4rem;
+}
+.main-container .card .hide {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .main-container .card {
+        padding: 3.0rem;
+        border-radius: 3rem;
+    }
+
+    .main-container .card .star {
+        width: 5.0rem;
+        height: 5.0rem;
+    }
+
+    .main-container .card .star img {
+        width: 1.7rem;
+    }
+
+    .main-container .card .title {
+        margin-top: 3.4rem;
+        font-size: 2.77rem;
+    }
+
+    .main-container .card .text {
+        margin-top: 0.9rem;
+        line-height: 2.4rem;
+        font-size: 1.505rem;
+    }
+
+    .main-container .card .rating-wrapper .rating-btn {
+        width: 5.1rem;
+        height: 5.1rem;
+        font-size: 1.6rem;
+    }
+
+    .main-container .card .rating-wrapper .rating-btn div {
+        transform: translateY(0);
+    }
+
+    .main-container .card .submit-btn {
+        margin-top: 3.2rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
