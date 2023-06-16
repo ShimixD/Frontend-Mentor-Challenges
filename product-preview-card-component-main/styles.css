@@ -27,7 +27,7 @@ body {
     border-radius: 10px;
 }
 .image {
-    background-image: url(./images/image-product-desktop.jpg);
+    background-image: url(images/image-product-desktop.jpg);
     background-size: cover;
     width: 300px;
     height: 455px;
@@ -107,7 +107,7 @@ body {
     .image {
         width: 345px;
         height: 240px;
-        background-image: url(./images/image-product-mobile.jpg);
+        background-image: url(images/image-product-mobile.jpg);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
