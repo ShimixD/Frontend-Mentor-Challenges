@@ -86,12 +86,12 @@ body {
     border-radius: 8px;
     background-color: var(--DarkCyan);
     cursor: pointer;
-}
-.section-text .item-button p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-left: 10px;
     color: var(--White);
+}
+.section-text .item-button img{
+    margin-right: 10px;
 }
 .section-text .item-button:hover {
     background-color: var(--VeryDarkCyan);
