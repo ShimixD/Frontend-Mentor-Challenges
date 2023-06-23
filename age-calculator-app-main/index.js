@@ -51,13 +51,7 @@ buttonResult.addEventListener('click', (e) => {
         diffMonth = 12 + diffMonth;
     }
 
-    if (!isValidDate(year, month, day)) {
-        inputDay.classList.add('input-error');
-        inputMonth.classList.add('input-error');
-        inputYear.classList.add('input-error');
-    
-        errorDay.innerHTML = 'Invalid date';
-    } else if (isNaN(year) || isNaN(month) || isNaN(day)) {
+    if (isNaN(year) || isNaN(month) || isNaN(day)) {
         inputForm.forEach((element) => {
             element.classList.add('input-error');
         });
@@ -73,6 +67,12 @@ buttonResult.addEventListener('click', (e) => {
     } else if (year > getYear) {
         inputYear.classList.add('input-error');
         errorYear.innerHTML = 'Must be in the past';
+    } else if (!isValidDate(year, month, day)) {
+        inputDay.classList.add('input-error');
+        inputMonth.classList.add('input-error');
+        inputYear.classList.add('input-error');
+    
+        errorDay.innerHTML = 'Invalid date';
     } else {
         inputDay.classList.remove('input-error');
         inputMonth.classList.remove('input-error');
