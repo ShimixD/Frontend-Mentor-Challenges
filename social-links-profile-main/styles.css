@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/static/Inter-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url('/assets/fonts/static/Inter-SemiBold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url('/assets/fonts/static/Inter-Bold.ttf');
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: var(--Grey900);
+    color: var(--White);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 385px;
+    height: 615px;
+    background-color: var(--Grey800);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+.card-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.card-header-text {
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.card-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.card-location {
+    color: var(--Green);
+}
+
+.card-links {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.card-header {
+    margin-bottom: 28px;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey700);
+    height: 45px;
+    border-radius: 9px;
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.15s ease-in-out;
+}
+
+.card-link:hover {
+    background-color: var(--Green);
+    color: black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 415px) {
+    .card {
+        width: 330px;
+        height: 580px;
+        padding: 20px;
+    }
+
+    .card-motto {
+        font-size: 13px;
+    }
+}
