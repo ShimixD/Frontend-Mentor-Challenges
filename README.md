@@ -22,4 +22,4 @@ Frontend Mentor challenges i do when i have free time. :D
 - [REST Countries API with color theme switcher](https://rest-countries-api-gules.vercel.app)
 - [Results summary component](https://shimixd.github.io/Frontend-Mentor-Challenges/results-summary-component-main)
 - [Age calculator app](https://shimixd.github.io/Frontend-Mentor-Challenges/age-calculator-app-main)
-- [Age calculator app](https://shimixd.github.io/Frontend-Mentor-Challenges/fylo-data-storage-component-master)
+- [Fylo data storage component](https://shimixd.github.io/Frontend-Mentor-Challenges/fylo-data-storage-component-master)

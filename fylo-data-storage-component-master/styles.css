@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Gradient: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: var(--VeryDarkBlue);
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.fino-content {
+    width: 355px;
+    height: 205px;
+    background-color: var(--DarkBlue);
+    border-radius: 12px;
+    border-top-right-radius: 95px;
+    padding: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: var(--VeryDarkBlue);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storage-bar-container {
+    width: 540px;
+    height: 155px;
+    padding: 40px;
+    background-color: var(--DarkBlue);
+    border-radius: 8px;
+}
+
+.storage-alert-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    right: 40px;
+    top: 28px;
+}
+
+.storage-alert {
+    width: 180px;
+    height: 75px;
+    background-color: white;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    padding: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: var(--GrayishBlue);
+    font-size: 12px;
+}
+
+.storage-alert span {
+    color: var(--DarkBlue);
+    font-size: 40px;
+}
+
+.storage-alert-triangle {
+    position: absolute;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.storage-title {
+    color: var(--PaleBlue);
+    padding-bottom: 15px;
+}
+
+.storage-title span {
+    font-weight: 700;
+}
+
+.storage-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #0c122c;
+    padding: 3px;
+    position: relative;
+}
+
+.storage-bar-fill {
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.storage-bar-point {
+    width: 10px;
+    height: 10px;
+    background-color: var(--PaleBlue);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    margin-right: 2px;
+}
+
+.storage-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--PaleBlue);
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 945px) {
+    body {
+        background-image: url("./images/bg-mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .fino-content {
+        width: 325px;
+        height: 200px;
+    }
+
+    .storage-bar-container {
+        width: 325px;
+        height: 160px;
+        padding: 35px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .storage-alert-container {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        width: max-content;
+    }
+
+    .storage-alert {
+        border-bottom-right-radius: 8px;
+    }
+
+    .storage-alert-triangle {
+        display: none;
+    }
+}
