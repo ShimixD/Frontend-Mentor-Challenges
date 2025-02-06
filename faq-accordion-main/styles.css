@@ -36,7 +36,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100svh;
+    gap: 2rem;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     background: url('assets/images/background-pattern-desktop.svg') no-repeat;
@@ -44,13 +45,6 @@ body {
     background-size: 100%;
     background-position: top;
     background-attachment: fixed;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
