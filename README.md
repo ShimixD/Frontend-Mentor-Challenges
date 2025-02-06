@@ -24,3 +24,4 @@ Frontend Mentor challenges i do when i have free time. :D
 - [Age calculator app](https://shimixd.github.io/Frontend-Mentor-Challenges/age-calculator-app-main)
 - [Fylo data storage component](https://shimixd.github.io/Frontend-Mentor-Challenges/fylo-data-storage-component-master)
 - [Social links profile](https://shimixd.github.io/Frontend-Mentor-Challenges/social-links-profile-main)
+- [FAQ accordion](https://shimixd.github.io/Frontend-Mentor-Challenges/faq-accordion-main)
